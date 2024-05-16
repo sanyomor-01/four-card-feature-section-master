@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(https://fonts.google.com/specimen/Poppins);
+};
+
+:root{
+    /*colors*/
+    --clr-pri-red:hsl(0, 78%, 62%);
+    --clr-pri-cyan:hsl(180, 62%, 55%);
+    --clr-pri-orange:hsl(34, 97%, 64%);
+    --clr-pri-blue:hsl(212,86%,64%);
+
+    /*Neutral colors*/
+
+    --clr-neu-dark-blue:hsl(234, 12%, 34%);
+    --clr-neu-grayish-blue:hsl(229, 6%, 66%);
+    --clr-neu-light-gray:hsl(0, 0%, 98%);
+
+    /*typography*/
+    --ff-poppins: 'Poppins';
+    --fs-body: 0.9325;
+    --fw-small:200;
+    --fw-normal:400;
+    --fw-bold:600;
+
+
+};
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4 {
+    line-height: 1.1;
+}
+html{
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-body);
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+img, picture,video,canvas, svg{
+    display: block;
+    max-width: 100%;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+.wrapper{
+    max-width: 1110px;
+    margin: 0;
+}
+  
+.wrapper-narrow{
+    max-width: 500px;
+    margin: 0;
+}
+
+
+
+
