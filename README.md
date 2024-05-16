@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution URL](https://your-solution-url.com)
-- Live Site URL:[The live site](https://four-card-feature-section-master-git-main-sanyomors-projects.vercel.app/)
+- Solution URL: [My solution URL](https://github.com/sanyomor-01/four-card-feature-section-master)
+- Live Site URL:[The live site](https://four-card-feature-section-master-neon.vercel.app/)
 
 ## My process
 - I started with the component html structure. I used semantic html tags
