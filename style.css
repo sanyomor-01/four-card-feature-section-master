@@ -16,8 +16,8 @@
 
     /*typography*/
     --ff-poppins: 'Poppins';
-    --fs-body: 0.9325;
-    --fw-small:200;
+    --fs-body: 0.9375rem;
+    --fw-light:200;
     --fw-normal:400;
     --fw-bold:600;
 
@@ -34,23 +34,23 @@ p, h1, h2, h3, h4, h5, h6 {
 
 h1,h2,h3 {
     color: var(--clr-neu-grayish-blue);
-    line-height: 1.1;
+    line-height: 1.2;
 }
 html{
    font-family: var(--ff-poppins);
-    font-size: var(--fs-body);
+    
 }
 
 body {
+    background-color: var(--clr-neu-light-gray);
+    color: var(--clr-neu-grayish-blue);
     line-height: 1.5;
+    font-size: var(--fs-body);
     -webkit-font-smoothing: antialiased;
     padding-block-end: 4rem;
   }
 
-img, picture,video,canvas, svg{
-    display: block;
-    max-width: 100%;
-}
+
 
 #root, #__next {
     isolation: isolate;
@@ -59,10 +59,25 @@ header{
     text-align: center;
     margin-block: 4rem;
 }
+.title{
+    font-size: 2rem;
+    font-weight: var(--fw-light);
+    color: var(--clr-neu-dark-blue);
+
+}
+header > p{
+    font-size:1rem;
+    font-weight: var(--fw-normal);
+    color: var(--clr-neu-grayish-blue);
+}
+h1 > span{
+    font-weight: var(--fw-bold);
+}
 
 
 .wrapper{
     max-width: 1110px;
+    padding-inline: 2rem;
     margin-inline: auto;
 }
   
@@ -79,10 +94,12 @@ header{
 .grid-layout > *{
     flex: 1;
 }
+
 .col{
     display: grid;
     gap: var(--gap);
 }
+
 .card{
     --br: 0.3rem;
     padding: 2rem;
@@ -93,8 +110,17 @@ header{
 
 .card-title{
     font-size: 1.5rem;
+    margin: 0;
     font-weight: var(--fw-normal);
     color: var(--clr-neu-dark-blue);
+}
+ .card-img {
+    display: block;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+.card > p{
+    font-size: 0.9rem;
 }
 
 .border-cyan {
